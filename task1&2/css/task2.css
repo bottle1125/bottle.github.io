@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+	font:15px/200% 'Microsoft Yahei',Arial,sans-serif;
+}
+body{
+	background-color:rgb(196,189,191);
+}
+nav{
+	height: 60px;
+	background:rgb(40,36,37); ;
+
+}
+nav img{
+	display: inline-block;
+	width: 200px;
+	height: 300px;
+	margin-left: 70px;
+	margin-top: 8px;
+}
+nav ul {
+	display: inline-block;
+	float: right;
+	width: 350px;
+	height: 30px;
+	margin-top: 19px;
+}
+nav ul li{
+	float: left;
+	width: 80px;
+}
+nav ul li a{
+	text-decoration: none;
+	font-size: 12px;
+	color: rgb(255,255,255);
+}
+nav ul li a:hover{
+	color: rgb(134,121,124);
+}
+
+article,aside{
+	margin: 2%;
+	padding: 30px;
+	background-color: rgb(255,255,255);
+	box-shadow: 2px 2px 1px 1px  gray;
+}
+
+header h2{
+	font-size: 25px;
+	color: #000;
+}
+header h3{
+	font-size: 20px;
+	color: rgb(95,86,88);
+}
+header p{
+
+	font-size: 14px;
+	color: rgb(95,86,88);
+}
+article section p{
+	text-indent: 2em;
+}
+#article2 #form li{
+	list-style-type: none;
+	margin-left: 25px;
+}
+#article3 figure{
+	width:180px;
+	height: 155px;
+	text-align: center;
+	margin: auto auto 25px 50px;
+	border:1px solid gray;
+}
+#article3 figure p{
+	height: 40px;
+	line-height: 40px;
+}
+#article3 figure img{
+	width: 150px;
+	height: 100px;
+}
+#article4 ol{
+	margin: 25px 50px;
+}
+#article4 table{
+	width: 100%;
+	border-collapse: collapse;
+}
+#article4 table th{
+	background-color: #000;
+	color: #fff;
+	text-align: left;
+}
+#article4 table tr:last-child{
+	background-color: gray;
+}
+aside h2{
+	font-size: 18px;
+	border-left: 3px solid gray;
+	padding-left: 10px;
+
+}
+
+aside form{
+	width: 100%;
+}
+aside div .message{
+	display: inline-block;
+	width: 200px;
+	margin: auto 15px 15px 200px;
+	text-align: right;
+}
+aside div .msg{
+	margin: -10px auto 20px 415px;
+	color: gray;
+}
+aside .personal{
+	vertical-align: top;
+}
+aside textarea{
+	width: 700px;
+	height: 100px;
+}
+aside #submit{
+	width: 100%;
+	height: 40px;
+	margin:0 auto;
+	border-radius: 10px;
+	background-color: rgb(69,77,214);
+	color: #fff;
+	font-size: 18px;
+}
+footer{
+	width: 100%;
+	height: 70px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+}
