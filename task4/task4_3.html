@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Task Four</title>
+	<style type="text/css">
+	body{
+		height: 100%;
+		width: 100%;
+	}
+	/*第三种垂直居中的方式，使用flexbox*/
+	.task{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 500px;
+		height: 500px;
+		border: 1px solid #999;
+	}
+	.box-set{
+		width: 400px;
+		height: 200px;
+		background-color: gray;
+		position: relative;
+	}
+	.box{
+			background-color: yellow;
+		width: 50px;
+		height: 50px;
+	}
+	#box1{
+		border-radius: 0 0 100% 0 ;
+	
+	}
+	#box2{
+		border-radius: 100% 0 0 0;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	
+	</style>
+</head>
+<body>
+<div class="task">
+	<div class="box-set">
+		<div class="box" id="box1"></div>
+		<div class="box" id="box2"></div>
+	</div>
+</div>
+</body>
+</html>
