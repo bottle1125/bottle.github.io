@@ -9,7 +9,7 @@ body{
 nav{
 	height: 60px;
 	background:rgb(40,36,37); ;
-
+	position: relative;
 }
 nav img{
 	display: inline-block;
@@ -17,6 +17,8 @@ nav img{
 	height: 300px;
 	margin-left: 70px;
 	margin-top: 8px;
+	position: absolute;
+	float: left;
 }
 nav ul {
 	display: inline-block;
