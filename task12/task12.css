@@ -136,7 +136,7 @@ a:hover{
 @keyframes 'notTarget' {            
     0% { z-index: 75; }        	
     100% { z-index: 75; }        	
-} 、
+} 
 /*点击导航时对应的图片播放动画*/           		
 #demo3 .slideLeft:target{
 	z-index: 100;
