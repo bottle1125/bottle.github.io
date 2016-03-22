@@ -10,7 +10,7 @@
         padding-top:20px; 
     }
 
-    /*-- our cleafix hack -- */ 
+    /*-- 清除浮动 -- */ 
     .row:before, 
     .row:after {
         content:"";
@@ -25,6 +25,7 @@
         padding-left:  10px; 
         margin-bottom: 20px;
     }
+    /*当屏幕宽度大于768px时*/
     @media all and (min-width: 769px){
     .col-md-1{ width: 8.33%; }
     .col-md-2{ width: 16.66%; }
@@ -32,6 +33,7 @@
     .col-md-4{ width: 33.33%; }
     .col-md-6{ width: 50%;   }
 }
+    /*当屏幕宽度小于768px时*/
     @media all and (max-width: 768px){
     .col-sm-2{ width: 16.66%; }
     .col-sm-3{ width: 25%;    }
@@ -47,4 +49,3 @@
         outline: 1px solid #999; 
     }
 
-    /*-- some extra column content styling --*/
