@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devive-width,initial-scale=1.0">
+	<title>Task Ten</title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	#wrapper{
+		box-sizing: border-box;
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	@media all and (max-width: 640px){
+	#wrapper{
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	#box4{
+		order: 1;
+	}
+	.box:nth-child(-n+3){
+		order: 2;
+	}
+}
+
+	.box{
+		width: 150px;
+		margin-top: 20px;
+		padding: 20px;
+	}
+	.box:nth-child(-n+3){
+		border: 1px solid #f00;
+	}
+	#box1{
+		height: 120px;
+	}
+	#box2{
+		height: 100px;
+	}
+	#box3{
+		height: 40px;
+	}
+	#box4{
+		border: 1px solid #0f0;
+		height: 200px;
+	}
+		</style>
+</head>
+<body>
+<div id="wrapper">
+	<div class="box" id="box1"></div>
+	<div class="box" id="box2"></div>
+	<div class="box" id="box3"></div>
+	<div class="box" id="box4"></div>
+</div>
+</body>
+</html>
