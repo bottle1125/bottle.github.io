@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to Skyworth</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.5, user-scalable=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/question.css">
+
+</head>
+<body id="body">
+  <nav class="navbar-a navbar-fixed-top" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);" >
+    <div class="container-fluid">
+      <div class="navbar-header" >
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="glyphicon glyphicon-list" style="font-size: 20px"></span>
+          
+        </button>
+        <a href="index.html" ><p class="navbar-brand nav-tool" >Skyworth Club</p></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a href="project.html"class="nav-tool" >Project</a></li>
+        <li><a href="activity.html"class="nav-tool">Activity</a></li>
+        <li><a href="About.html"class="nav-tool" >About</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+ <section class="main col-md-8 col-xs-12">
+      <section id="search">
+        <form method="post" action="#">
+        <input type="text" name="search" class="col-md-9 col-xs-11" />
+        <input type="submit" name="search" value="搜索" class="col-md-1 col-xs-3"/>
+        <input type="submit" name="put" value="提出" class="col-md-1 col-xs-3"/>
+        </form>
+      </section>
+      <section id="submain" class="col-md-12 col-xs-12">
+        <section class="question">          
+          <h2>在这里输入已提出的问题</h2>
+          
+          <h3>2015.09.02</h3> 
+            <p>详情</p>      
+        </section>
+        <section class="question">
+          
+          <h2>在这里输入已提出的问题</h2>
+          
+          <h3>2015.09.02</h3> 
+          <p>详情</p>
+        </section>
+        <section class="question">
+          
+          <h2>在这里输入已提出的问题</h2>
+          
+          <h3>2015.09.02</h3>  
+              <p>详情</p>   
+        </section>
+        <section class="question">
+          
+          <h2>在这里输入已提出的问题</h2>
+          
+          <h3>2015.09.02</h3>  
+           <p>详情</p>      
+        </section>
+      </section>
+  </section>
+    
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript">
+      $(document).ready(function(){
+       
+        $(".nav-tool").bind("mouseover",function(){
+          $(this).css("color","white")
+          $(this).css("opacity","0.5")
+        }).bind("mouseout",function(){
+            $(this).css("opacity",1)
+        })
+      })
+      </script>
+</body>
+</html>

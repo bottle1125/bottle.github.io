@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Skyworth</title>
+  <title>Welcome to Skyworth</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.5, user-scalable=no">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
 
 </head>
 <body id="body">
@@ -14,52 +14,152 @@
     <div class="container-fluid">
       <div class="navbar-header" >
         <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="glyphicon glyphicon-list" style="font-size: 20px"></span> 
+          <span class="glyphicon glyphicon-list" style="font-size: 20px"></span>
+          
         </button>
-        <a href="index.html" ><p class="navbar-brand nav-tool" >Skyworth Club</p></a>
+        <a href="index.html" ><p class="navbar-brand nav-tool" style="background-color: #FF9966;">Skyworth Club</p></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li ><a href="project.html"class="nav-tool">Project</a></li>
-        <li><a href="activity.html"class="nav-tool" >Activity</a></li>
-        <li><a href="About.html"class="nav-tool" style="background-color: #FF9966">About</a></li>
+        <li ><a href="project.html"class="nav-tool" >Project</a></li>
+        <li><a href="activity.html"class="nav-tool">Activity</a></li>
+        <li><a href="About.html"class="nav-tool">About</a></li>
       </ul>
     </div>
     </div>
   </nav>
-  <section id="main">
-  <section id="search">
-        <form method="post" action="#">
-        <input type="text" name="search" />
-        <input type="submit" name="search" value="搜索" />
-        <input type="submit" name="put" value="提出"/>
-        </form>
-      </section>
-      <section id="submain">
-        <section class="question">          
-          <h2>在这里输入已提出的问题</h2>
-          <p>详情</p>
-          <h3>2015.09.02</h3>         
-        </section>
-        <section class="question">
-          
-          <h2>在这里输入已提出的问题</h2>
-          <p>详情</p>
-          <h3>2015.09.02</h3> 
-        </section>
-        <section class="question">
-          
-          <h2>在这里输入已提出的问题</h2>
-          <p>详情</p>
-          <h3>2015.09.02</h3>         
-        </section>
-        <section class="question">
-          
-          <h2>在这里输入已提出的问题</h2>
-          <p>详情</p>
-          <h3>2015.09.02</h3>         
-        </section>
-      </section>
-      </section>
-  </body>
-  </html>
+  <div id="myCarousel"  class="carousel slide" data-ride="carousel">
+    <!--第一步：设计轮播图片的容器。-->
+    <!--            #slidershow 层添加 slide 样式，使用图片与图片切换效果有平滑感-->
+    <ol class="carousel-indicators">
+      <!--第二步：设计轮播图片计数器。-->
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox" style="height: 50%;width: 100%">
+      <!--第三步：设计轮播图片播放区,使用 carousel-inner 样式来控制-->
+      <div class="item active">
+        <img src="img/6.jpg" alt="" style="width: 100%">
+      </div>
+      <div class="item">
+        <img src="img/7.jpg" alt="" style="width: 100%">
+      </div>
+      <div class="item">
+        <img src="img/8.jpg" alt="" style="width: 100%">
+      </div>      
+    </div>    
+  </div>
+  <div id="video-box">
+    <div id="inner-text" class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+      <h1 style="color:#6CBB70">A title</h1>
+      <p style="opacity: 0.7">&nbsp;&nbsp;sometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsomesometextsometextsometextsometextsometextsomet</p>
+    </div>
+  
+    <div id="video"class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+      <video id="video1" controls style="width: 400px;height: 270px;" >
+        <source src="video/Skyworth.mp4" type="video/ogg" >
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+  </div>
+  <div id="img-box">
+    <div id="img" class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+      <img src="img/10.jpg" class="img-responsive img-1" style="width: 400px;height: 270px">
+    </div>
+    <div id="inner-text1" class="col-xs-12 col-sm-6 col-md-7 col-lg-7" >
+      <h1 style="color: #F5665D">A title</h1>
+      <p style="opacity: 0.7">&nbsp;&nbsp;sometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometeometextsometextsometextsometextsometextsometextsometextsometextsomet</p>
+    </div>
+  </div>
+  <div id="img-box1">
+    <div id="inner-text2" class="col-xs-12 col-srm-6 col-md-7 col-lg-7" >
+      <h1 style="color:#50A8F5">A title</h1>
+      <p style="opacity: 0.7">&nbsp;&nbsp;sometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometextsometetsometextsometextsometextsometextsometextsometextsometextsometextsomet</p>
+    </div>
+    <div id="img1" class="col-xs-12 col-sm-6 col-md-4 col-lg-4" style="width: 400px;height: 270px ;padding-top: 100px;">
+      <img src="img/logo.png" id="logo" class="img-responsive img-1" style="height: 270px; ">
+    </div>
+  </div>
+  <div id="footer">
+  	<p>加入我们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q&A<span id="myPage" data-toggle="tooltip" title="返回顶端" class="glyphicon glyphicon-chevron-up"></span></br>copyright@Skyworth Club</p>
+	
+  </div>
+  
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+ $(document).ready(function(){
+ 	$('[data-toggle="tooltip"]').tooltip();
+ 	$("#myPage").click(function(){
+ 		$("html").animate({scrollTop:0},1000);
+ 	})
+  
+  $("button").click(function(){
+            if ($(".navbar-a").css("max-height")=="50px") {
+              $(".navbar-a").css("max-height","70px")
+            }
+            else{
+               $(".navbar-a").css("max-height","50px")
+            } 
+        })
+	$(window).scroll(function(){
+		if($(window).width()<770){
+			$("video-box").removeClass();
+			$("#video-box").animate({height:"850", padding:0 },0);
+			$("#inner-text,#inner-text1,#inner-text2").attr("class","mobile-text");
+			$("#inner-text").css("left","0px")
+			$("#video").css("left",($(window).width()-500)/2+"px")
+			$("#video1").animate({width:"500px"},0);
+			$("#img-box").animate({height:"900px", padding:0 },0);
+			$("#inner-text1").css("left","0px")
+			$("#img").css("padding-left","100px")
+			$("#img").css("padding-bottom","50px")
+			$(".img-1").animate({width:"450px",height:"auto"},0);
+			$("#inner-text2").css("left","0px")
+			$("#inner-text2").css("height","550px")
+			$("#img-box1").animate({height:"900px", padding:0 },0);
+			$("#img1").css("padding-left","150px")
+			$("#logo").animate({height:"235px" },0);
+			$("#footer >p >#myPage").css("left","100px")
+
+		}
+		if($(window).width()>770){
+			if($(window).scrollTop()<=200){
+				$("#inner-text").stop().animate({opacity:"0.3",left:"-1000px"},500);
+			}
+			else{
+				$("#inner-text").stop().animate({opacity:"1",left:"100px"},1500);
+				$("#inner-text p").css("opacity","0.7")
+			}
+			if($(window).scrollTop()<=600){
+				$("#inner-text1").stop().animate({opacity:"0.3",right:"-1000px"},500);
+			}
+			else{
+				$("#inner-text1").stop().animate({opacity:"1",right:"0"},1500);
+				$("#inner-text1 p").css("opacity","0.7")
+			}
+			if($(window).scrollTop()<=1000){
+				$("#inner-text2").stop().animate({opacity:"0.3",left:"-1000px"},500);
+			}
+			else{
+				$("#inner-text2").stop().animate({opacity:"1",left:"0"},1500);
+				$("#inner-text2 p").css("opacity","0.7")
+			}
+		}
+	})
+	$(".nav-tool").bind("mouseover",function(){
+		$(this).css("color","white")
+		$(this).css("opacity","0.5")
+	}).bind("mouseout",function(){
+		
+		$(this).css("opacity",1)
+      })
+    })
+    
+  </script>
+</body>
+</html>

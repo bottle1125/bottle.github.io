@@ -1,0 +1,77 @@
+.background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+.box{
+	padding-top: 50px;
+	padding-right: 80px;
+	width: 100%;
+	height: 1000px;
+	color: black;
+}
+
+#logo{
+	width: 300px;
+	
+}
+.box >.col-md-2 >#logo >img{
+ 	width: 80px;
+}
+.box ul{
+	border: 1px solid #e5e5e5;
+}
+.box ul li {
+	border: 1px solid #e5e5e5;
+	text-align: center;
+}
+.navbar-a{
+	color: white;
+	background-color:#FF561C;
+	font-color:white;
+	max-height: 50px;
+
+}
+
+
+.nav-tool{
+	color: white;
+	background-color: #FF561C;
+
+}
+.nav-tool:hover{
+	color:#737373;
+	background-color: #FF561C;
+}
+
+.tab-pane ul{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	border: transparent;
+	padding-left:15px;
+	padding-top: 30px;
+}
+.tab-pane ul li{
+	list-style-type: none;
+	float: left;
+	width: 226px;
+	height: 300px;
+	border: 2px solid #e5e5e5;
+	margin-bottom: 20px;
+	text-align: left;
+}
+.tab-pane ul li img{
+	width: 100%;
+	height: 192px;
+}
+.tab-pane ul p{
+	width: 100%;
+
+	padding: 15px 23px;
+	font-size: 18px;
+}

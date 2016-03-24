@@ -1,0 +1,47 @@
+.background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.navbar-a{
+	color: white;
+	background-color:#FF561C;
+	font-color:white;
+	max-height: 50px;
+
+}
+
+.nav-tool{
+	color: white;
+	background-color: #FF561C
+
+}
+.nav-tool:hover{
+	color:#737373;
+	background-color: #FF561C;
+}
+.img{
+	float: left;
+	width: 280px;
+	height: 400px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+#img-box{
+	
+	height: 500px;
+	
+
+
+}
+.inner-text{
+	padding-top: 30px;
+	height: 250px;
+	color: black;
+
+}

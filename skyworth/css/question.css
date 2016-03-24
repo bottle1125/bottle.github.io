@@ -1,0 +1,85 @@
+.background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.navbar-a{
+	color: white;
+	background-color:#FF561C;
+	font-color:white;
+	max-height: 50px;
+
+}
+.nav-tool{
+	color: white;
+	background-color: #FF561C;
+
+}
+.nav-tool:hover{
+	color:#737373;
+	background-color: #FF561C;
+}
+
+.main{
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	padding-top:85.4px ;
+	padding-left: 0;
+	padding-right: 0;
+}
+#search input[type|="text"]{
+	height: 50px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#search input[type|="submit"]{
+	height: 50px;
+	background-color: #FF561C;;
+	color: #fff;
+	margin-left: 20px;
+}
+
+#submain{
+	margin-top: 60px;
+	width: 100%;
+}
+#submain .question{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-bottom: 40px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid gray;
+}
+#submain h2{
+	font-family: "Microsoft Yahei";
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom:10px;
+	width: 100%;
+}
+#submain h3{
+	font-size: 25px;
+	margin: 0;
+	color: gray;
+	padding-top:5px;
+}
+#submain p{
+	font-size: 25px;
+	color: rgb(255,87,34);
+
+}
+

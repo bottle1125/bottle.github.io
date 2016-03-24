@@ -1,0 +1,135 @@
+.background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+#footer {
+    position: relative;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+    display: block;
+    height: 100px; 
+    bottom: 0 !important;
+    text-align: center;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: #808080;
+    
+    
+}
+#footer >p > span{
+  cursor: pointer;
+  left: 300px;
+  top: 20px;
+
+}
+#footer + .tooltip >.tooltip-inner{
+  background-color: #3391D9
+  color: white;
+  opacity: 1;
+  border: 1px solid black;
+  padding: 15px;
+  font-size: 20px; 
+  z-index: 1;
+}
+
+#img-box{
+  height: 600px;
+  padding-left: 80px;
+  color: black;
+  font-family: Sans-serif,Helvetica;
+  font-size: 1em;
+  
+}
+#img-box1{
+  height: 600px;
+  
+  padding-left: 80px;
+  color: black;
+  font-family: Sans-serif,Helvetica;
+  font-size: 1em;
+  
+}
+
+#img{
+  padding-top: 100px;
+  
+}
+.img-1{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.img-1:hover{
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19),0 8px 30px 0 rgba(0, 0, 0, 0.1);
+}
+#inner-text,#inner-text1,#inner-text2{
+  left: 0px;
+  font-size:24px;
+  padding: 30px;
+  word-wrap: break-word;
+  position: relative;
+
+}
+#inner-text{
+  left: 80px;
+}
+#inner-text >p, #inner-text1 >p, #inner-text >p{
+  opacity: 0.7;
+}
+.mobile-text{
+  height: 450px;
+  font-size:24px;
+  word-wrap: break-word;
+  position: relative;
+  text-align: ltr;
+}
+.mobile-text >p{
+  opacity: 0.7;
+}
+.navbar-a{
+  color: white;
+  background-color:#FF561C;
+  font-color:white;
+  max-height: 50px;
+
+}
+
+.nav >li > a:hover{
+  background-color: #FF561C;
+  
+}
+.nav-tool{
+  color: white;
+  background-color: #FF561C
+
+}
+.nav-tool:hover{
+  color:#737373;
+  background-color: #FF561C;
+}
+#myCarousel{
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#video-box{
+  height: 600px;
+  color: black;
+  font-family: Sans-serif,Helvetica;
+  
+}
+
+
+#video{
+  position: relative;
+  left: 150px;
+  padding-top: 100px;
+  
+}
+
