@@ -67,20 +67,29 @@
       </section>
   </section>
     
-  <script src="js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/bootstrap.min.js"></script>
   
   <script type="text/javascript">
       $(document).ready(function(){
-       
+        $("#logo").css("padding-left",($(".box ul").width()-80)/2+"px")
+        $(window).resize(function(){
+          $("#logo").css("padding-left",($(".box ul").width()-80)/2+"px")
+        })
         $(".nav-tool").bind("mouseover",function(){
           $(this).css("color","white")
           $(this).css("opacity","0.5")
         }).bind("mouseout",function(){
             $(this).css("opacity",1)
         })
+        $("button").click(function(){
+          $(".navbar-a").css("max-height","70px")
+        })
       })
-      </script>
+        
+  </script>
+  
+  
 </body>
 </html>
