@@ -1,0 +1,209 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	width: 100%;
+	font-family: "Microsoft Yahei";
+	font-size: 12px;
+	background-color: #f2f2f2;
+}
+img{
+	width: 100%;
+}
+.container,.block,#article_all{
+	font-size: 14px;
+	max-width: 42rem;
+	margin: 0 auto;
+	background-color: #fff;
+	margin-bottom: 2rem;
+}
+header{
+	width: 100%;
+	height: 6rem;
+	background-color: #91D4DA;
+	color: #fff;
+}
+header a,header #title{
+		height: 6rem;
+	line-height: 6rem;
+	font-size: 2rem;
+}
+header a{
+	float: left;
+	text-decoration: none;
+	color: #fff;
+	margin-left: 2rem;
+	position: absolute;
+}
+header #title{
+	display: block;
+	text-align: center;
+}
+nav{
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	margin-top: 1.5rem ;
+}
+#nav{
+	height: 3rem;
+	width: 10rem;
+	text-align: center;
+	font-size: 1.5rem;
+	color: gray;
+
+}
+#nav:hover{
+	border-bottom: 0.5rem solid gray;
+}
+
+
+section#tag_all {
+  padding-bottom: 2rem;
+  margin: 2rem 2rem auto 2rem;
+  border-bottom: 2px solid gray;
+}
+section#tag_all ul {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+section#tag_all ul .tag {
+
+  text-align: center;
+
+}
+section#tag_all ul .tag span {
+	width: 4rem;
+	height: 4rem;
+  background: #91D4DA;
+  display: inline-block;
+  border-radius: 50%;
+}
+section#tag_all ul .tag span img {
+	display: inline-block;
+  width: 2rem;
+  height: 3rem;
+  margin: 0.5rem auto;
+}
+section#tag_all ul .tag p {
+  font-size: 1.2rem;
+  color: #646464;
+}
+#branch_all{
+	display: flex;
+
+	padding: 2rem 1rem;
+}
+.branch{
+
+	width: 33.33%;
+	height: 15rem;
+	border-right: 2px solid gray;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-align: center;
+}
+.branch:last-child{
+	border-right: transparent;
+}
+
+.branch h2{
+	padding-top: 1.5rem;
+	padding-bottom: 1rem;
+	font-size: 2rem;
+
+}
+.branch h3{
+	font-size: 1rem;
+}
+.block,.article,.article_last{
+	padding: 2rem;
+	
+}
+
+.block h2{
+	font-size: 3rem;
+	padding:1rem;
+	padding-left: 0;
+	border-bottom: 2px solid gray;
+}
+.theme{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1rem;
+}
+.block img{
+	width: 33.33%;
+	height: 15rem;
+	margin-bottom: 2rem;
+}
+.block ul{
+	width: 62%;
+	height: 15rem;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+.block ul li{
+	list-style-type: none;
+	width: 47%;
+	text-align: center;
+	margin-bottom: 1rem;
+
+	height: 7rem;
+	float: left;
+	background-color: #f2f2f2;
+
+}
+.theme p{
+	font-size: 1.5rem;
+
+	line-height: 7rem;
+}
+.article{
+	height: 15rem;
+	display: flex;
+	justify-content: space-between;
+}
+.article img{
+	width: 40%;
+	height: 12rem;
+
+}
+.article .content{
+	padding-left: 2rem;
+	width: 62%;
+	height: 12rem;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.article .content h2{
+	font-size: 2.5rem;
+	color: gray;
+}
+.article .content h3,.article_last h3{
+	font-size: 2rem;
+	color: #f2f2f2;
+}
+
+.article_last h2{
+	font-size: 2.5rem;
+	color: gray;
+} 
+#content_last{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom:1rem;
+	padding-top:1rem; 
+}
+#content_last img{
+	width: 12rem;
+	height: 10rem;
+
+}
