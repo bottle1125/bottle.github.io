@@ -30,41 +30,35 @@
   </nav>
  <section class="main col-md-8 col-xs-12">
       <section id="search">
-        <form method="post" action="#">
-        <input type="text" name="search" class="col-md-9 col-xs-11" />
-        <input type="submit" name="search" value="搜索" class="col-md-1 col-xs-3"/>
+        <form method="get" action="#">
+        <input id="search-input" type="text" name="search" class="col-md-9 col-xs-11" />
+        <input id="search-button" type="submit" name="search" value="搜索" class="col-md-1 col-xs-3"/>
         <input type="submit" name="put" value="提出" class="col-md-1 col-xs-3"/>
         </form>
       </section>
       <section id="submain" class="col-md-12 col-xs-12">
-        <section class="question">          
-          <h2>在这里输入已提出的问题</h2>
-          
+        <ul>
+        <li class="question">          
+          <h2>问题一</h2>
           <h3>2015.09.02</h3> 
             <p>详情</p>      
-        </section>
-        <section class="question">
-          
-          <h2>在这里输入已提出的问题</h2>
-          
+        </li>
+        <li class="question">
+          <h2>问题二</h2>
           <h3>2015.09.02</h3> 
           <p>详情</p>
-        </section>
-        <section class="question">
-          
-          <h2>在这里输入已提出的问题</h2>
-          
+        </li>
+        <li class="question">
+          <h2>你好吗</h2>
           <h3>2015.09.02</h3>  
-              <p>详情</p>   
-        </section>
-        <section class="question">
-          
-          <h2>在这里输入已提出的问题</h2>
-          
+          <p>详情</p>   
+        </li>
+        <li class="question">
+          <h2>问题四</h2>
           <h3>2015.09.02</h3>  
            <p>详情</p>      
-        </section>
-      </section>
+        </li>
+      </ul>
   </section>
     
 <script src="js/jquery.min.js"></script>
@@ -86,8 +80,17 @@
         $("button").click(function(){
           $(".navbar-a").css("max-height","70px")
         })
-      })
-        
+
+           $("#search-button").click(function(){
+         $("#submain .question")
+                  .hide()
+                   .filter(":contains('"+( $("#search-input").val() )+"')")
+                   .show();
+     })
+
+
+         
+        })
   </script>
   
   
