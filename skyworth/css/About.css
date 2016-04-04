@@ -19,10 +19,12 @@
 
 #logo{
 	width: 200px;
-	
+	margin-bottom: 15px;
+	  margin-left: -20px;
 }
-.box >.col-md-2 >#logo >img{
+.box .col-md-2 #logo >img{
  	width: 80px;
+ 	height: 80px;
 }
 .navbar-a{
 	color: white;
@@ -31,23 +33,68 @@
 	max-height: 50px;
 
 }
-
-.nav >li > a:hover{
+.nav-stacked >li:hover{
   background-color: #FBE9E7;
+  color: #FF561C;
   
 }
-.nav-pills >li >a{
+.nav-stacked >li >a:hover{
+  background-color: #FBE9E7;
+  color: #FF561C;
+}
+.navbar-nav >li > a:hover{
+  background-color: #FF561C;
+  
+}
+.nav-sidebar >li >a{
 	opacity: 0.7;
 	color: black;
+	font-size: 18px;
+	padding: 15px 0 15px 22px;
 }
-.nav-pills >li.active >a{
+.nav-sidebar >li.active{
 	background-color: #FBE9E7;
 	color: black;
 }
-.nav-pills >li.active >a:hover, .nav-pills >li.active >a:focus{
+.nav-sidebar >li.active >a{
+	background-color: #FBE9E7;
+	border: 0;
+	color: #FF561C;
+}
+
+.nav-sidebar >li.active >a:hover, .nav-sidebar >li.active >a:focus{
+	background-color: #FBE9E7;
+	color: black;
+	border: 0;
+}
+.nav-sidebar >li.active:hover, .nav-sidebar >li.active:focus{
 	background-color: #FBE9E7;
 	color: black;
 }
+.sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .nav-tool{
 	color: white;
 	background-color: #FF561C
@@ -63,7 +110,8 @@
 	justify-content: space-between;
 	border: transparent;
 	padding-left:15px;
-	padding-top: 30px;
+	padding-top: 50px;
+	padding-right: 50px;
 }
 .tab-pane ul li{
 	list-style-type: none;
@@ -71,7 +119,7 @@
 	width: 226px;
 	height: 300px;
 	border: 2px solid #e5e5e5;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	text-align: left;
 }
 .tab-pane ul li img{
