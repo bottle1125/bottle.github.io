@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>Task 18</title>
+</head>
+<style type="text/css">
+body{
+	margin: 10px;
+	padding: 10px;
+}
+li{
+	list-style-type: none;
+	background-color: red;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	float: left;
+	margin-left: 10px;
+}
+</style>
+<body>
+	<input type="text" id="input1" placeholder="请输入" />
+	<input type="button" value="左插入" />
+	<input type="button" value="右插入" />
+	<input type="button" value="左删除" />
+	<input type="button" value="右删除" />
+	<div>
+		<ul id="list"><li>12</li></ul>
+	</div>
+	<script type="text/javascript">
+		var inputs_btn=document.getElementsByTagName("input");
+		var input=document.getElementById("input1");
+		var list=document.getElementById("list");
+		function Process(){};
+		Process.prototype.point=function (obj){
+			if(obj.value==="左插入"){
+				return "left_in";
+			}else if(obj.value=="右插入"){
+				return "right_in";
+			}else if (obj.value=="左删除") {
+				return "left_del";
+			}else if(obj.value=="右删除"){
+				return "right_del";
+			}
+		};
+		Process.prototype.handle=function(obj){
+			if (obj=="left_in") {
+				if(input.value===""){
+					alert("请输入文字！")
+				}else{
+				var node=document.createElement("li");
+				node.innerHTML=input.value;
+				list.insertBefore(node,list.firstChild);
+				input.value=null;}
+			}else if (obj=="right_in") {
+				if(input.value===""){
+					alert("请输入文字！")
+				}else{
+				var node=document.createElement("li");
+				node.innerHTML=input.value;
+				list.appendChild(node);
+				input.value=null;}
+			}else if (obj=="left_del") {
+				if(list.childNodes===null){
+					alert("无可删除对象")
+				}else{
+				alert(list.firstChild.innerHTML);
+				list.removeChild(list.firstChild);
+			}}
+			else if (obj=="right_del") {
+				if(!list.hasChildNodes){
+					alert("无可删除对象")
+				}else{
+				alert(list.lastChild.innerHTML);
+				list.removeChild(list.lastChild);
+			}}
+		}
+		var item=new Process();
+		function click_input(){
+			for (var i = 0; i < inputs_btn.length; i++) {
+					inputs_btn[i].onclick=function(){
+						item.handle(item.point(this));
+					}
+			}
+		}
+		click_input();
+		
+
+	</script>
+</body>
+</html>
