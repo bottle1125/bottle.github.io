@@ -84,8 +84,8 @@ li{
 			if(judgement(obj)){
 			 	if (obj=="left_in") {data.unshift(input.value);updata();}	
 				else if(obj=="right_in"){data.push(input.value);updata();}		
-				else if(obj=="left_del"){data.shift();updata();}
-				else if (obj=="right_del") {data.pop();updata();}	
+				else if(obj=="left_del"){alert(data.shift());updata();}
+				else if (obj=="right_del") {alert(data.pop());updata();}	
 				else if(obj=="sort"){sortdata(data);}
 				else if(obj=="clear"){data=null;updata();}	
 			}		
