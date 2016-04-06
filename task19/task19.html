@@ -62,10 +62,10 @@ li{
 		/*对输入进行判断*/
 		function judgement(obj){
 			if (obj=="left_in"||obj=="right_in") {
-				if(list.childNodes.length>=60){alert("队列个数已达到上限");return false;}
-				else if (input.value==="") {alert("请输入数据！");return false;}
-				else if(parseInt(input.value)>=0 || parseInt(input.value)<=100){return true;}
-				else {alert("请输入正确的数据！");return false;}	
+				if(list.childNodes.length>=60){alert("队列个数已达到上限");input.value="";return false;}
+				else if (input.value==="") {alert("请输入数据！");input.value="";return false;}
+				else if(parseInt(input.value)>=10 &&parseInt(input.value)<=100){return true;}
+				else {alert("请输入在10~100范围内的数据！");input.value="";return false;}	
 			}	
 			else if	(obj=="left_del"||obj=="right_del")	{
 				if(list.childNodes.length<=0){alert("无可删除对象");return false;}
