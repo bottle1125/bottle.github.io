@@ -1,86 +1,85 @@
-.background{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right:0;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
-}
 *{
 	margin: 0;
 	padding: 0;
 }
+body{
+	background-image: linear-gradient(to bottom,#fff,rgb(178,178,178));
+}
 .navbar-a{
 	color: white;
-	background-color:#FF561C;
+	background-color:#212121;
 	font-color:white;
-	max-height: 50px;
+
 
 }
-.nav-tool{
-	color: white;
-	background-color: #FF561C;
 
+.nav-stacked >li:hover{
+  background-color: #FBE9E7;
+  color: #FF561C;
+  
 }
-.nav-tool:hover{
-	color:#737373;
-	background-color: #FF561C;
+.nav-stacked >li >a:hover{
+  background-color: #FBE9E7;
+  color: #FF561C;
+}
+.navbar-nav >li > a:hover{
+	background-color: #212121;
 }
 
 .main{
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+	margin-top: 100px;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
-	padding-top:100px ;
 	padding-left: 0;
 	padding-right: 0;
-}
-
-#search input[type|="text"]{
-	height: 50px;
-	margin-bottom: 10px;
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
-#search input[type|="submit"]{
-	height: 50px;
-	background-color: #FF561C;;
-	color: #fff;
-	margin-left: 100px;
+	width: 70%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 #submain{
-	margin-top: 60px;
+	box-shadow: 3px 3px 3px #888888;
+	padding: 30px;
+	padding-left: 60px;
+	padding-right: 60px;
+	background-color: #fff;
+}
+#submain img{
 	width: 100%;
+
+}
+#submain ul{
+	margin-top: 30px;
+
 }
 #submain .question{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	margin-bottom: 40px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid gray;
+	margin-bottom: 10px;
+
+}
+#submain ul{
+	padding-left: 0;
 }
 #submain h2{
 	font-family: "Microsoft Yahei";
-	font-size: 30px;
+	font-size: 16px;
 	margin-top: 0;
-	margin-bottom:10px;
-	width: 100%;
+	color: rgb(0,64,128);
+	left: 0;
 }
-#submain h3{
-	font-size: 25px;
-	margin: 0;
-	color: gray;
-	padding-top:5px;
-}
-#submain p{
-	font-size: 25px;
-	color: rgb(255,87,34);
-
+#submain a{
+	font-size: 10px;
+	color: rgb(0,64,128);
+	text-decoration: none;
+	cursor: pointer;
+	right: 0;
 }
 
+#submain div{
+	display: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 20px;
+}

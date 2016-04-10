@@ -8,9 +8,9 @@
 	z-index: -1;
 }
 .box{
-	padding-top: 50px;
+	padding-top: 60px;
 	width: 100%;
-	height: 1000px;
+	height: 500px;
 	color: black;
 }
 .box li{
@@ -18,21 +18,24 @@
 }
 
 #logo{
+	margin-left: -20px;
 	width: 200px;
 	margin-bottom: 15px;
-	  margin-left: -20px;
 }
 .box .col-md-2 #logo >img{
  	width: 80px;
  	height: 80px;
 }
+
+
 .navbar-a{
 	color: white;
-	background-color:#FF561C;
+	background-color:#212121;
 	font-color:white;
-	max-height: 50px;
+
 
 }
+
 .nav-stacked >li:hover{
   background-color: #FBE9E7;
   color: #FF561C;
@@ -43,8 +46,7 @@
   color: #FF561C;
 }
 .navbar-nav >li > a:hover{
-  background-color: #FF561C;
-  
+	background-color: #212121;
 }
 .nav-sidebar >li >a{
 	opacity: 0.7;
@@ -52,24 +54,38 @@
 	font-size: 18px;
 	padding: 15px 0 15px 22px;
 }
-.nav-sidebar >li.active{
-	background-color: #FBE9E7;
-	color: black;
-}
 .nav-sidebar >li.active >a{
 	background-color: #FBE9E7;
 	border: 0;
 	color: #FF561C;
 }
-
+.nav-sidebar >li.active{
+	background-color: #FBE9E7;
+	color: #FF561C;
+	
+}
+.nav-sidebar >li ul{
+	list-style-type: none;
+}
+.nav-sidebar >li ul li:hover{
+	background-color:  #FF561C;
+}
 .nav-sidebar >li.active >a:hover, .nav-sidebar >li.active >a:focus{
 	background-color: #FBE9E7;
-	color: black;
+	color: #FF561C;
 	border: 0;
 }
 .nav-sidebar >li.active:hover, .nav-sidebar >li.active:focus{
 	background-color: #FBE9E7;
 	color: black;
+}
+.nav-tool{
+	color: white;
+	
+}
+.nav-tool:hover{
+	color:#737373;
+	
 }
 .sidebar {
     position: fixed;
@@ -95,15 +111,6 @@
   padding-left: 20px;
 }
 
-.nav-tool{
-	color: white;
-	background-color: #FF561C
-
-}
-.nav-tool:hover{
-	color:#737373;
-	background-color: #FF561C;
-}
 .tab-pane ul{
 	display: flex;
 	flex-flow: row wrap;
