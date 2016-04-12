@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>Task 18</title>
+</head>
+<style type="text/css">
+body{
+	margin: 10px;
+	padding: 10px;
+}
+li{
+	list-style-type: none;
+	background-color: red;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	float: left;
+	margin-left: 10px;
+}
+form{
+	margin: 10px 0;
+	border:1px solid gray;
+	width: 208px;
+}
+form input{
+	border:none;
+	outline: none;
+}
+#search-text{
+	height: 32px;
+	line-height: 32px;
+}
+#search-button{
+	background-image: url(search4.png);
+	width: 29px;
+	height: 30px;
+	vertical-align: middle;
+}
+</style>
+<body>
+	<textarea rows="5" cols="20" id="input1" placeholder="请输入内容"></textarea>
+	<input name="btn" type="button" value="左插入" />
+	<input name="btn" type="button" value="右插入" />
+	<input name="btn" type="button" value="左删除" />
+	<input name="btn" type="button" value="右删除" />
+	<form action="#" post="get">
+	<input type="text" id="search-text" placeholder="请输入查询关键字"  />
+	<input type="submit" id="search-button" value="" />
+	</form>
+	<div>
+		<ul id="list"></ul>
+	</div>
+	<script type="text/javascript">
+		var inputs_btn=document.getElementsByName("btn");
+		var search_btn=document.getElementById("search-button");
+		var search_text=document.getElementById("search-text");
+		var input=document.getElementById("input1");
+		var list=document.getElementById("list");
+		function point(obj){
+			if(obj.value==="左插入"){
+				return "left_in";
+			}else if(obj.value=="右插入"){
+				return "right_in";
+			}else if (obj.value=="左删除") {
+				return "left_del";
+			}else if(obj.value=="右删除"){
+				return "right_del";
+			}
+		}
+		function handle(obj){
+			if (obj=="left_in") {
+				if(input.value===""){
+					alert("请输入文字！")
+				}else{
+				var node=document.createElement("li");
+				node.innerHTML=input.value;
+				list.insertBefore(node,list.firstChild);
+				input.value=null;}
+			}else if (obj=="right_in") {
+				if(input.value===""){
+					alert("请输入文字！")
+				}else{
+				var node=document.createElement("li");
+				node.innerHTML=input.value;
+				list.appendChild(node);
+				input.value=null;}
+			}else if (obj=="left_del") {
+				if(list.childNodes.length<=0){
+					alert("无可删除对象")
+				}else{
+				alert(list.firstChild.innerHTML);
+				list.removeChild(list.firstChild);
+			}}
+			else if (obj=="right_del") {
+				if(list.childNodes.length<=0){
+					alert("无可删除对象")
+				}else{
+				alert(list.lastChild.innerHTML);
+				list.removeChild(list.lastChild);
+			}}
+		}
+		search_btn.onclick=function(){
+			var key=0;
+			for (var i = 0; i < list.childNodes.length; i++) {
+				var string1=list.childNodes[i].innerHTML.toLowerCase();
+				var string2=search_text.value.toLowerCase();
+				if(string1.search(string2)!=-1)
+				{	key=1;
+					list.childNodes[i].style.color="white";
+					list.childNodes[i].style.background="blue";
+				}else{
+
+					list.childNodes[i].style.color="white";
+					list.childNodes[i].style.background="red";
+				}
+			};
+		search_text.value="";
+		if(key===0){
+			alert("没有您要查找的内容！");
+		}
+	}
+		function click_input(){
+			for (var i = 0; i < inputs_btn.length; i++) {
+					inputs_btn[i].onclick=function(){
+						handle(point(this));
+					}
+			}
+		}
+		
+		click_input();
+	</script>
+</body>
+</html>
