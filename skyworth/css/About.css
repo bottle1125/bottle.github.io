@@ -1,141 +1,66 @@
-.background{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right:0;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
-}
-.box{
-	padding-top: 60px;
-	width: 100%;
-	height: 500px;
-	color: black;
-}
-.box li{
-	text-align: center;
-}
+*{margin: 0;padding: 0;font-size: 16px;}
+body{background: rgba(28,28,28,0.5);}
+.navbar-a{color: white;background-color: #212121;font-color: white;}
+.nav-stacked >li:hover{background-color: #FBE9E7;color: #FF561C;}
+.nav-stacked >li >a:hover{background-color: #FBE9E7;color: #FF561C;} 
+.navbar-nav >li > a:hover{background-color: #212121;}
+.nav-tool{color: white;	}
+.nav-tool:hover{color:#737373;}
 
-#logo{
-	margin-left: -20px;
-	width: 200px;
-	margin-bottom: 15px;
-}
-.box .col-md-2 #logo >img{
- 	width: 80px;
- 	height: 80px;
-}
-
-
-.navbar-a{
-	color: white;
-	background-color:#212121;
-	font-color:white;
-
-
-}
-
-.nav-stacked >li:hover{
-  background-color: #FBE9E7;
-  color: #FF561C;
-  
-}
-.nav-stacked >li >a:hover{
-  background-color: #FBE9E7;
-  color: #FF561C;
-}
-.navbar-nav >li > a:hover{
-	background-color: #212121;
-}
-.nav-sidebar >li >a{
-	opacity: 0.7;
-	color: black;
-	font-size: 18px;
-	padding: 15px 0 15px 22px;
-}
-.nav-sidebar >li.active >a{
-	background-color: #FBE9E7;
-	border: 0;
-	color: #FF561C;
-}
-.nav-sidebar >li.active{
-	background-color: #FBE9E7;
-	color: #FF561C;
-	
-}
-.nav-sidebar >li ul{
-	list-style-type: none;
-}
-.nav-sidebar >li ul li:hover{
-	background-color:  #FF561C;
-}
-.nav-sidebar >li.active >a:hover, .nav-sidebar >li.active >a:focus{
-	background-color: #FBE9E7;
-	color: #FF561C;
-	border: 0;
-}
-.nav-sidebar >li.active:hover, .nav-sidebar >li.active:focus{
-	background-color: #FBE9E7;
-	color: black;
-}
-.nav-tool{
-	color: white;
-	
-}
-.nav-tool:hover{
-	color:#737373;
-	
-}
-.sidebar {
-    position: fixed;
-    top: 51px;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-    background-color: #f5f5f5;
-    border-right: 1px solid #eee;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  }
-.nav-sidebar {
-  margin-right: -21px; /* 20px padding + 1px border */
-  margin-bottom: 20px;
-  margin-left: -20px;
-}
-.nav-sidebar > li > a {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.tab-pane ul{
+.tab-content{
+	background-color: rgb(255,255,217);
+	width: 80%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 100px;margin-bottom: 100px;
 	display: flex;
-	flex-flow: row wrap;
 	justify-content: space-between;
-	border: transparent;
-	padding-left:15px;
-	padding-top: 50px;
-	padding-right: 50px;
+	flex-flow: row wrap;
+	overflow: hidden;
+	box-shadow: 6px 6px 8px #666;
+	border-radius: 40px;
 }
-.tab-pane ul li{
-	list-style-type: none;
-	float: left;
-	width: 226px;
-	height: 300px;
-	border: 2px solid #e5e5e5;
-	margin-bottom: 30px;
-	text-align: left;
+figure{
+	width: 180px;
+	margin: 40px;
+	overflow: hidden;
+	box-shadow: 6px 6px 8px #666;
+	border-radius: 100%;
 }
-.tab-pane ul li img{
+figure img{
 	width: 100%;
-	height: 192px;
+	height: 250px;
+	cursor: pointer;
 }
-.tab-pane ul p{
-	width: 100%;
+figure:hover{box-shadow: 10px 10px 15px #666;border: 1px solid #666;}
 
-	padding: 15px 23px;
-	font-size: 18px;
+figure p{
+	display: none;
+}
+#modal{position:fixed;width:100%;height:100%;left:0;top:0;padding-top:5%;display: none;background-color: rgba(0,0,0,0.7);}
+#modal img{float:left;width: 60%;}
+#wrap{width: 100%;height:100%;display: flex;justify-content: center;align-items: center;}
+#introduction{position: absolute;}
+#introduction p{text-align: center;color: #fff;font-size: 3rem;line-height: 3rem;}
+#introduction span{font-size: 3.5rem;}
+@-webkit-keyframes zoom{
+	from {transform: scale(0);}
+	to {transform: scale(1);}
+}
+@keyframes zoom{
+	from {transform: scale(0);}
+	to {transform: scale(1);}
+}
+.modal-content,#introduction{-webkit-animation-name:zoom;-webkit-animation-duration:0.6s;animation-name:zoom;animation-duration:0.6s}
+@media only screen and (min-width: 768px){
+	#modal img{width: 50%;}
+	#introduction{position:absolute;width:80%;left: 10%;top:82%;}
+}
+@media only screen and (min-width: 940px){
+	#modal img{width: 30%;}
+	#introduction{position:absolute;width: 15%;left: 70%;top:30%;}
+}
+@media only screen and (max-width: 320px){
+	#modal img{width: 50%;}
+	#introduction{position:absolute;width: 80%;left: 10%;top:76%;}
 }
