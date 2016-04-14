@@ -25,6 +25,7 @@ body{background: rgba(28,28,28,0.3);text-align: center;}
 	overflow: hidden;
 }
 .content{
+	display: block;
 	width: 180px;
 	margin: 40px;
 	overflow: hidden;
