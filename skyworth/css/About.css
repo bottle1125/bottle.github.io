@@ -1,5 +1,5 @@
 *{margin: 0;padding: 0;}
-body{background: rgba(28,28,28,0.3);}
+body{background: rgba(28,28,28,0.3);text-align: center;}
 .navbar-a{color: white;background-color: #212121;font-color: white;}
 .nav-stacked >li:hover{background-color: #FBE9E7;color: #FF561C;}
 .nav-stacked >li >a:hover{background-color: #FBE9E7;color: #FF561C;} 
@@ -10,13 +10,11 @@ body{background: rgba(28,28,28,0.3);}
 .tab-content{
 	background-color: #fff;
 	width: 80%;
-	left: 50%;
-	transform: translateX(-50%);
 	margin-top: 100px;margin-bottom: 100px;
-	display: flex;
+	display: inline-flex;
 	justify-content: space-between;
 	flex-flow: row wrap;
-	-webkit-display: flex;
+	-webkit-display: inline-flex;
 	-webkit-justify-content: space-between;
 	-webkit-flex-flow: row wrap;
 	overflow: hidden;
@@ -49,7 +47,7 @@ figure p{
 
 #modal{position:fixed;width:100%;height:100%;left:0;top:0;padding-top:3%;display: none;background-color: rgba(0,0,0,0.7);}
 #wrap{width: 100%;height:100%;display: flex;flex-flow:row wrap;justify-content: center;align-items:center;-webkit-display: flex;-webkit-justify-content: center;}
-#introduction p{font-size: 20px;line-height: 24px;}
+#introduction p{font-size: 20px;line-height: 20px;}
 #introduction span{font-size: 24px;}
 
 @media only screen and (min-width: 769px){
