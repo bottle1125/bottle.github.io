@@ -24,7 +24,7 @@ body{background: rgba(28,28,28,0.3);text-align: center;}
 	-webkit-border-radius: 40px;
 	overflow: hidden;
 }
-figure{
+.content{
 	width: 180px;
 	margin: 40px;
 	overflow: hidden;
@@ -34,14 +34,14 @@ figure{
 	-webkit-border-radius: 100%;
 	overflow: hidden;
 }
-figure img{
+.content img{
 	width: 100%;
 	height: 250px;
 	cursor: pointer;
 }
-figure:hover{box-shadow: 10px 10px 15px #666;-webkit-box-shadow: 10px 10px 15px #666;border: 1px solid #666;-webkit-border: 1px solid #666;}
+.content:hover{box-shadow: 10px 10px 15px #666;-webkit-box-shadow: 10px 10px 15px #666;border: 1px solid #666;-webkit-border: 1px solid #666;}
 
-figure p{
+.content p{
 	display: none;
 }
 
