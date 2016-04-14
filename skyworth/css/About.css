@@ -30,8 +30,8 @@ figure{
 	overflow: hidden;
 	box-shadow: 6px 6px 8px #666;
 	-webkit-box-shadow: 6px 6px 8px #666;
-	border-radius: 500px;
-	-webkit-border-radius: 500px;
+	border-radius: 180px/250px;
+	-webkit-border-radius: 180px/250px;
 	overflow: hidden;
 }
 figure img{
