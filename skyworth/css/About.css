@@ -32,11 +32,12 @@
 }
 
 .box{
-	padding-top: 18%;
+	padding-top: 80px;
 	padding-left: 10%;
 	padding-right: 10%;
 	height: auto;
 	color: black;
+	text-align: center;
 }
 #li{
 	display: flex;
@@ -89,8 +90,8 @@ img{
 
 @media only screen and (max-width: 500px){
 	.box li{
-		width: 300px;height: 400px;
+		width: 300px;height: 330px;
 		margin: 15px auto;
 	}
-	.text{margin-top:5px;font-size: 14px;}
+	.text{margin-top:10px;font-size: 14px;}
 }
