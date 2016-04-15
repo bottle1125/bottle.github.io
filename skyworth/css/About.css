@@ -39,6 +39,7 @@
 	color: black;
 	text-align: center;
 }
+.box *{display: block;}
 #li{
 	display: -webkit-box;
 	display: flex;
