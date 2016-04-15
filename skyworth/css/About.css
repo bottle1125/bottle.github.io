@@ -40,14 +40,13 @@
 	text-align: center;
 }
 #li{
-	display: -webkit-flex;
+	display: -webkit-box;
 	display: flex;
 	justify-content: space-between;
 	-webkit-justify-content:space-between;
 	flex-flow: row wrap;
 	-webkit-flex-flow: row wrap;
 }
-#li > *{display: block;}
 .box li{
 	text-align: center;
 	border-radius: 5px;
