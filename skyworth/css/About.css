@@ -58,7 +58,7 @@
 img{
 	width: 100%;
 }
-.text{width: 100%;height: 20%;margin-top: 7px;}
+.text{width: 100%;height: 20%;margin-top: 5px;}
 .box li:hover{
 	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19),0 8px 30px 0 rgba(0, 0, 0, 0.1);
 }
@@ -78,11 +78,13 @@ img{
 	.box li{
 		width:210px;height:280px;
 	}
+	.text{margin-top: 0;font-size: 14px;}
 }
 @media only screen and (max-width: 900px){
 	.box li{
 		width:180px;height:240px;
 	}
+	.text{margin-top: 0;font-size: 12px;}
 }
 
 @media only screen and (max-width: 500px){
@@ -91,4 +93,5 @@ img{
 		width: 300px;height: 400px;
 		margin: 15px auto;
 	}
+	.text{margin-top:5px;font-size: 14px;}
 }
