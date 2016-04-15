@@ -1,0 +1,75 @@
+*{margin: 0;padding: 0;}
+body{background: rgba(28,28,28,0.3);text-align: center;}
+.navbar-a{color: white;background-color: #212121;font-color: white;}
+.nav-stacked >li:hover{background-color: #FBE9E7;color: #FF561C;}
+.nav-stacked >li >a:hover{background-color: #FBE9E7;color: #FF561C;} 
+.navbar-nav >li > a:hover{background-color: #212121;}
+.nav-tool{color: white;	}
+.nav-tool:hover{color:#737373;}
+
+.tab-content{
+	background-color: #fff;
+	width: 80%;
+	margin-top: 100px;margin-bottom: 100px;
+	display: inline-flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	-webkit-display: flex;
+	-webkit-justify-content: space-between;
+	-webkit-flex-flow: row wrap;
+	overflow: hidden;
+	box-shadow: 6px 6px 8px #666;
+	border-radius: 40px;
+	-webkit-box-shadow: 6px 6px 8px #666;
+	-webkit-border-radius: 40px;
+	overflow: hidden;
+}
+figure{
+	width: 180px;
+	margin: 40px;
+	overflow: hidden;
+	box-shadow: 6px 6px 8px #666;
+	-webkit-box-shadow: 6px 6px 8px #666;
+	border-radius: 180px/250px;
+	-webkit-border-radius: 180px/250px;
+	overflow: hidden;
+}
+figure img{
+	width: 100%;
+	height: 250px;
+	cursor: pointer;
+}
+figure:hover{box-shadow: 10px 10px 15px #666;-webkit-box-shadow: 10px 10px 15px #666;border: 1px solid #666;-webkit-border: 1px solid #666;}
+
+figure p{
+	display: none;
+}
+
+#modal{position:fixed;width:100%;height:100%;left:0;top:0;padding-top:3%;display: none;background-color: rgba(0,0,0,0.7);}
+#wrap{width: 100%;height:100%;display: flex;flex-flow:row wrap;justify-content: center;align-items:center;-webkit-display: flex;-webkit-justify-content: center;}
+#introduction p{font-size: 20px;line-height: 20px;}
+#introduction span{font-size: 24px;}
+
+@media only screen and (min-width: 769px){
+#pic{width: 30%;}
+#pic img{width: 100%;}
+#introduction{width:20%;position: absolute;top: 30%;left:70%;text-align: center;color: #fff;}
+}
+@media only screen and (max-width: 768px){
+#pic{margin-top:65px;width: 70%;height: 60%;overflow: hidden;}
+#pic img{width: 100%;}
+#introduction{width:100%;margin-top:10px;height:28%;text-align: center;color: #fff;}
+}
+
+@-webkit-keyframes zoom{
+	from {transform: scale(0);}
+	to {transform: scale(1);}
+}
+@keyframes zoom{
+	from {transform: scale(0);}
+	to {transform: scale(1);}
+}
+.modal-content,#introduction{-webkit-animation-name:zoom;-webkit-animation-duration:0.6s;animation-name:zoom;animation-duration:0.6s}
+
+
+

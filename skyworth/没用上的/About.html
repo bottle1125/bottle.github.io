@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to Skyworth</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.5, user-scalable=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/About.css">
+
+</head>
+<body id="body">
+  <nav class="navbar-a navbar-fixed-top" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);" >
+    <div class="container-fluid">
+      <div class="navbar-header" >
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="glyphicon glyphicon-list" style="font-size: 20px"></span> 
+        </button>
+        <a href="index.html" ><p class="navbar-brand nav-tool"  style="font-size:21px;height: 40px;">Skyworth Club</p></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a href="project.html"class="nav-tool">Project</a></li>
+        <li><a href="activity.html"class="nav-tool" >Activity</a></li>
+        <li><a href="About.html"class="nav-tool" style="background-color: #616161">About</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+   
+
+    <div id="main" class="tab-content ">
+      <figure >
+        <img src="img/周悦.jpg" /><p><span>周悦</span><br><br>天蝎女，喜欢充满挑战的每一天</p>
+      </figure>
+      <figure>
+        <img src="img/贝伟强.jpg" /><p><span>贝伟强</span><br><br>你好哇，我叫贝伟强</p>
+      </figure>
+      <figure>
+        <img src="img/陈敏.jpg" /><p><span>陈敏</span><br><br>我是陈敏，一个有个性、爱努力爱生活的女生</p>
+      </figure>
+      <figure>
+        <img src="img/陈桐立.jpg" /><p><span>陈桐立</span><br><br>找不到工作的弱渣</p>
+      </figure>
+      <figure>
+        <img src="img/陈梓民.jpg" /><p><span>陈梓民</span><br><br>某逗比，不解释</p>
+      </figure>
+      <figure>
+        <img src="img/何哲宇.jpg" /><p><span>何哲宇</span><br><br>Jabberwocky</p>
+      </figure>
+      <figure>
+        <img src="img/黄茂蕊.jpg" /><p><span>黄茂蕊</span><br><br>性格开朗大方，易于相处，做事认真，虽然理想很大，步伐却有些缓慢</p>
+      </figure>
+      <figure>
+        <img src="img/黄钺.JPG" /><p><span>黄钺</span><br><br>14级机械工程三班，是创维俱乐部产品运营组的成员</p>
+      </figure>
+      <figure>
+        <img src="img/蓝伟滨.jpg" /><p><span>蓝伟滨</span><br><br>stay hungry, stay foolish</p>
+      </figure>
+      <figure>
+        <img src="img/梁铭凯.jpg" /><p><span>梁铭凯</span><br><br>一个男人</p>
+      </figure>
+      <figure>
+        <img src="img/林烁挺.jpg" /><p><span>林烁挺</span><br><br>爱生活，爱学习，爱运动，爱音乐！</p>
+      </figure>
+      <figure>
+        <img src="img/林幼娜.jpg" /><p><span>林幼娜</span><br><br>热爱生活，做明媚的女孩~</p>
+      </figure>
+      <figure>
+        <img src="img/罗晓东.jpg" /><p><span>罗晓东</span><br><br>脚踏实地，低调务实</p>
+      </figure>
+      <figure>
+        <img src="img/芮涵.jpg" /><p><span>芮涵</span><br><br>一个喜欢ui的半吊子设计师</p>
+      </figure>
+      <figure>
+        <img src="img/张丹丽.jpg" /><p><span>张丹丽</span><br><br>我叫张丹丽，来自14级信工4班，是UI组的一员</p>
+      </figure>
+      <figure>
+        <img src="img/张英坤.JPG" /><p><span>张英坤</span><br><br>爱生活，爱自由，也爱吃苦，拍过拖，翘过课，我和你一样</p>
+      </figure>
+      <figure>
+        <img src="img/周陆旺.jpg" /><p><span>周陆旺</span><br><br>程序和产品的渣渣，渴望变得更碎，飞的更高</p>
+      </figure>
+      <figure>
+        <img src="img/周泳鑫.jpg" /><p><span>周泳鑫</span><br><br>一个有想法，有目标行走的人</p>
+      </figure>
+      </div>
+ <div id="modal">
+  <div id="wrap">
+  <div id="pic"><img class="modal-content" id="img01"></div>
+   <div id="introduction"></div> 
+    </div>  
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/About.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+        $("#logo").css("padding-left",($(".box ul").width()-80)/2+"px")
+        $(window).resize(function(){
+          $("#logo").css("padding-left",($(".box ul").width()-80)/2+"px")
+        })
+        $(".nav-tool").bind("mouseover",function(){
+          $(this).css("color","white")
+          $(this).css("opacity","0.5")
+        }).bind("mouseout",function(){
+            $(this).css("opacity",1)
+        })
+        $("button").click(function(){
+          $(".navbar-a").css("max-height","70px")
+        })
+      })
+        
+  </script>
+  </body>
+  </html>
