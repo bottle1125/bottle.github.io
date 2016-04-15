@@ -40,7 +40,7 @@
 	text-align: center;
 }
 #li{
-	-webkit-display: flex;
+	display: -webkit-box;
 	display: flex;
 	justify-content: space-between;
 	flex-flow: row wrap;
